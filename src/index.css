@@ -6,13 +6,19 @@
 .frame {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-  height: 600px;
+  width: 606px;
+  height: 606px;
   border: 2px solid;
   background-color: rgb(122, 122, 223);
 }
 
-.frame img {
+.frame div {
+  display: flex;
+  border: 1px solid;
   width: 200px;
   height: 200px;
+  background-color: aqua;
+  font-size: 200px;
+  justify-content: center;
+  align-items: center;
 }
