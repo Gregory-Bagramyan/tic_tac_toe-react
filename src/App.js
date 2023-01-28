@@ -8,7 +8,13 @@ function App() {
   // const [setSquaresState, currentSquaresState] = useState(squares);
 
   function show(event) {
-    let playedSquareId = event.target.id;
+    let playedSquareId =
+      squares[event.target.id] !== "O" && squares[event.target.id] !== "X"
+        ? event.target.id
+        : null;
+    if (playedSquareId === null) {
+      return;
+    }
     let squarePlayed = document.getElementById(playedSquareId);
     squarePlayed.innerHTML = "X";
     squares[playedSquareId] = "X";
@@ -67,6 +73,10 @@ function App() {
 
   const endGame = () => {
     console.log(winner);
+    // disable clicking
+    // display winner
+    // clear board
+    // enable clicking
   };
 
   return (
