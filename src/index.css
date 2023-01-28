@@ -1,6 +1,31 @@
 * {
   box-sizing: border-box;
 }
+.navbar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+
+.back {
+  padding: 1%;
+  margin: 1%;
+  border: solid;
+  cursor: pointer;
+  align-items: center;
+  background-color: rgb(121, 169, 252);
+  border-radius: 10%;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+.back-link {
+  text-decoration: none;
+}
+
 .game {
   display: flex;
   padding: 30px;

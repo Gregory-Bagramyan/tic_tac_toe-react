@@ -80,11 +80,20 @@ function App() {
   };
 
   return (
-    <div className="game">
-      <div className="frame">
-        {squares.map((square, index) => (
-          <div onClick={show} key={index} id={index}></div>
-        ))}
+    <div>
+      <nav className="navbar">
+        <div className="back">
+          <a className="back-link" href="../index.html">
+            BACK
+          </a>
+        </div>
+      </nav>
+      <div className="game">
+        <div className="frame">
+          {squares.map((square, index) => (
+            <div onClick={show} key={index} id={index}></div>
+          ))}
+        </div>
       </div>
     </div>
   );
